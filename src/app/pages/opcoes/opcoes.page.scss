@@ -1,0 +1,14 @@
+/* your-component.scss */
+.opcao-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.opcao {
+  width: 100px;
+  margin: 10px;
+  box-shadow: 0 2px 4px rgba(52, 52, 52, 0.1);
+  border-radius: 8px;
+text-align: center;
+font-family: Arial, Helvetica, sans-serif;
+}
