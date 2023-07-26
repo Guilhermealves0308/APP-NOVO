@@ -2,13 +2,45 @@
 .opcao-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
+/* your-component.scss */
 
 .opcao {
-  width: 100px;
+  width: 150px; /* Adjust the width as needed */
+  height: 100px; /* Set a fixed height for consistent card sizes */
   margin: 10px;
   box-shadow: 0 2px 4px rgba(52, 52, 52, 0.1);
   border-radius: 8px;
-text-align: center;
-font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex; /* Center the card content vertically */
+  align-items: center; /* Center the card content vertically */
+  justify-content: center; /* Center the card content horizontally */
+  cursor: pointer; /* Add a pointer cursor to indicate interactivity */
+  transition: background-color 0.2s ease-in-out; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for desktop */
+.opcao:hover {
+color: #000000;
+  background-color: #f0f0f0; /* Change the background color on hover */
+}
+
+
+/* Hover effect for mobile (touch interactions) */
+@media (hover: none) {
+  .opcao:hover {
+    background-color: transparent; /* Remove background color on touch devices */
+  }
+}
+
+
+
+ion-title {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center; /* Center the text within the ion-title */
+  font-size: 24px; /* Adjust the font size as needed */
+  font-weight: bold; /* Add bold font-weight to the title */
+  color: #333; /* Set the title text color */
 }
