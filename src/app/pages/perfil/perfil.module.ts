@@ -4,18 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { AgendarPageRoutingModule } from './agendar-routing.module';
+import { PerfilPageRoutingModule } from './perfil-routing.module';
 
-import { AgendarPage } from './agendar.page';
+import { PerfilPage } from './perfil.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    AgendarPageRoutingModule
+    PerfilPageRoutingModule
   ],
-  declarations: [AgendarPage]
+  declarations: [PerfilPage]
 })
-export class AgendarPageModule {}
-  
+export class PerfilPageModule {}

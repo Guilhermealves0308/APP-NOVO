@@ -1,20 +1,18 @@
+// opcoes.module.ts
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
-
 import { IonicModule } from '@ionic/angular';
 
-import { OpcoesPageRoutingModule } from './opcoes-routing.module';
+import { OpcoesPageRoutingModule } from './opcoes-routing.module'; // Certifique-se de importar corretamente o módulo de roteamento
 
 import { OpcoesPage } from './opcoes.page';
 
 @NgModule({
   imports: [
     CommonModule,
-    FormsModule,
     IonicModule,
-    OpcoesPageRoutingModule
+    OpcoesPageRoutingModule,
   ],
-  declarations: [OpcoesPage]
+  declarations: [OpcoesPage],
 })
 export class OpcoesPageModule {}

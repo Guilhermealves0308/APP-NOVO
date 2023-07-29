@@ -21,19 +21,7 @@
   transition: background-color 0.2s ease-in-out; /* Smooth transition for hover effect */
 }
 
-/* Hover effect for desktop */
-.opcao:hover {
-color: #000000;
-  background-color: #f0f0f0; /* Change the background color on hover */
-}
 
-
-/* Hover effect for mobile (touch interactions) */
-@media (hover: none) {
-  .opcao:hover {
-    background-color: transparent; /* Remove background color on touch devices */
-  }
-}
 
 
 

@@ -1,63 +1,26 @@
+<!-- opcoes.page.html -->
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title class="ion-text-center">Opções</ion-title>
+    <ion-title>Opções</ion-title>
+    <ion-toggle aria-label="Dark toggle" color="dark" [checked]="true" class=""></ion-toggle>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <div class="opcao-container">
-    <ion-card class="opcao">
+    <ion-card class="opcao" [routerLink]="['/perfil']">
       <ion-card-header>
         <ion-card-title>Perfil</ion-card-title>
       </ion-card-header>
     </ion-card>
 
-    <ion-card class="opcao">
+    <ion-card class="opcao" [routerLink]="['/dados']">
       <ion-card-header>
-        <ion-card-title>Favoritos</ion-card-title>
+        <ion-card-title>Dados</ion-card-title>
       </ion-card-header>
     </ion-card>
+    
+    <!-- Adicione outros links para outras páginas, se necessário -->
 
-    <ion-card class="opcao">
-      <ion-card-header>
-        <ion-card-title>Notificações</ion-card-title>
-      </ion-card-header>
-    </ion-card>
-
-    <ion-card class="opcao">
-      <ion-card-header>
-        <ion-card-title>Configurações</ion-card-title>
-      </ion-card-header>
-    </ion-card>
-
-    <ion-card class="opcao">
-      <ion-card-header>
-        <ion-card-title>Privacidade</ion-card-title>
-      </ion-card-header>
-    </ion-card>
-
-    <ion-card class="opcao">
-      <ion-card-header>
-        <ion-card-title>Preferências</ion-card-title>
-      </ion-card-header>
-    </ion-card>
-
-    <ion-card class="opcao">
-      <ion-card-header>
-        <ion-card-title>Contato</ion-card-title>
-      </ion-card-header>
-    </ion-card>
-
-    <ion-card class="opcao">
-      <ion-card-header>
-        <ion-card-title>Ajuda</ion-card-title>
-      </ion-card-header>
-    </ion-card>
-
-    <ion-card class="opcao">
-      <ion-card-header>
-        <ion-card-title>Sair</ion-card-title>
-      </ion-card-header>
-    </ion-card>
   </div>
 </ion-content>
