@@ -1,0 +1,26 @@
+<!-- opcoes.page.html -->
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Opções</ion-title>
+    <ion-toggle aria-label="Dark toggle" color="dark" [checked]="true" class=""></ion-toggle>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="opcao-container">
+    <ion-card class="opcao" [routerLink]="['/perfil']">
+      <ion-card-header>
+        <ion-card-title>Perfil</ion-card-title>
+      </ion-card-header>
+    </ion-card>
+
+    <ion-card class="opcao" [routerLink]="['/dados']">
+      <ion-card-header>
+        <ion-card-title>Dados</ion-card-title>
+      </ion-card-header>
+    </ion-card>
+    
+    <!-- Adicione outros links para outras páginas, se necessário -->
+
+  </div>
+</ion-content>
