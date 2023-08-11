@@ -12,6 +12,10 @@ const routes: Routes = [
     path: 'perfil',
     loadChildren: () => import('../perfil/perfil.module').then(m => m.PerfilPageModule),
   },
+  {
+    path:'agendar',
+    loadChildren: () => import('../agendar/agendar.module').then(m => m.AgendarPageModule),
+  }
 ];
 
 @NgModule({
