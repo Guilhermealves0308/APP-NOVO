@@ -1,3 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <img src="assets/logo.png" class="logo" alt="logo" />
+  </ion-toolbar>
+  
+</ion-header>
+
 <ion-content>
-  hq vai 
+  <ion-content>
+    <ion-card *ngFor="let massagem of massagens">
+      <img [alt]="massagem.title" [src]="massagem.image" />
+      <ion-card-header>
+        <ion-card-title>{{ massagem.title }}</ion-card-title>
+      </ion-card-header>
+  
+      <ion-card-content>
+        {{ massagem.description }}
+      </ion-card-content>
+    </ion-card>
+  </ion-content>
+  
 </ion-content>
