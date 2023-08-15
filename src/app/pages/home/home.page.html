@@ -6,33 +6,17 @@
 </ion-header>
 
 <ion-content>
-  <ion-card>
-    <img
-      alt="Silhouette of mountains"
-      src="assets/image.png"
-    />
-    <ion-card-header>
-      <ion-card-title>Card Title</ion-card-title>
-    </ion-card-header>
-
-    <ion-card-content>
-      Here's a small text description for the card content. Nothing more,
-      nothing less.
-    </ion-card-content>
-  </ion-card>
-
-  <ion-card>
-    <img
-      alt="Silhouette of mountains"
-      src="assets/sala.jpg"
-    />
-    <ion-card-header>
-      <ion-card-title>Card Title</ion-card-title>
-    </ion-card-header>
-
-    <ion-card-content>
-      Here's a small text description for the card content. Nothing more,
-      nothing less.
-    </ion-card-content>
-  </ion-card>
+  <ion-content>
+    <ion-card *ngFor="let massagem of massagens">
+      <img [alt]="massagem.title" [src]="massagem.image" />
+      <ion-card-header>
+        <ion-card-title>{{ massagem.title }}</ion-card-title>
+      </ion-card-header>
+  
+      <ion-card-content>
+        {{ massagem.description }}
+      </ion-card-content>
+    </ion-card>
+  </ion-content>
+  
 </ion-content>
