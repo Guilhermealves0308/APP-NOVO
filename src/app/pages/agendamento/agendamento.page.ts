@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { AgendamentoService } from '.\services\agendamento.service.ts';
+import { AgendamentoService } from 'src/app/services/agendamento.service';
 
 @Component({
   selector: 'app-agendamento',
@@ -7,13 +7,17 @@ import { AgendamentoService } from '.\services\agendamento.service.ts';
   styleUrls: ['agendamento.page.scss'],
 })
 export class AgendamentoPage {
-  selectedDate: string;
+  selectedDate: string = "";
 
-  constructor(private agendamentoService: AgendamentoService) {}
+  constructor  (private agendamentoService: AgendamentoService) {}
 
   agendar() {
-    this.agendamentoService.agendarConsulta(this.selectedDate).then(() => {
-      console.log('Consulta agendada!');
-    });
+    this.agendamentoService.agendarConsulta(this.selectedDate)
+      .then(() => {
+        console.log('Consulta agendada!');
+      })
+      .catch(error => {
+        console.error('Erro ao agendar consulta:', error);
+      });
   }
 }

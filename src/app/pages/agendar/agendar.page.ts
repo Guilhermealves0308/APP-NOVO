@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./agendar.page.scss'],
 })
 export class AgendarPage implements OnInit {
+consultas: any;
 
   constructor() { }
 
