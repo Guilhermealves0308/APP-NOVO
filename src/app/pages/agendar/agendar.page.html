@@ -1,13 +1,15 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>agendar</ion-title>
+    <ion-title>
+      Consultar Agenda
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">agendar</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let consulta of consultas">
+      <ion-label>{{ consulta.date }}</ion-label>
+    </ion-item>
+  </ion-list>
 </ion-content>

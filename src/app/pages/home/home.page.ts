@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { Router } from '@angular/router';
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.page.html',
@@ -35,7 +37,10 @@ export class HomePage implements OnInit {
     // Adicione mais tipos de massagem aqui...
   ];
   
-  constructor() { }
+  constructor(private router: Router) {}
+  goToAgendamento() {
+    this.router.navigate(['/agendamento']);
+  }
 
   ngOnInit() {
   }
